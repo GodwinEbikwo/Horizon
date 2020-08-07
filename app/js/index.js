@@ -62,13 +62,13 @@ featuresTL
     },
   })
   .from(fL, {
-    delay: -0.8,
+    delay: -0.7,
     opacity: 0,
     y: 40,
-    duration: 1,
+    duration: 1.5,
     ease: "power3.out",
     stagger: {
-      amount: 0.4,
+      amount: 1,
     },
   });
 

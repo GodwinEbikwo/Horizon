@@ -15,6 +15,13 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/app/scss/style.css" />
+
+    <!-- SCROLL REVEAL ANIMATIONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css"
+    />
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
   </head>
   <body>
     <main>
@@ -171,14 +178,20 @@
 
       <section class="articles">
         <div class="article__content container container--pall-hero">
-          <h2 id="aT">Latest articles</h2>
+          <h2 id="aT" class="wow fadeInUp">
+            Latest articles
+          </h2>
 
           <div class="article__grid">
-            <a href="#" class="article__item">
+            <a
+              href="#"
+              class="article__item wow fadeInUp"
+              data-wow-delay="0.4s"
+            >
               <div
                 class="article__image"
                 style="
-                  background-image: url(https://res.cloudinary.com/dqv9mfbvt/image/upload/v1596818022/img-003_ofyhy2.webp);
+                  background-image: url(https://res.cloudinary.com/dqv9mfbvt/image/upload/v1596303259/22_l8vmao.png);
                 "
               >
                 <div
@@ -198,7 +211,11 @@
               </div>
             </a>
 
-            <a href="#" class="article__item">
+            <a
+              href="#"
+              class="article__item wow fadeInUp"
+              data-wow-delay="0.5s"
+            >
               <div
                 class="article__image"
                 style="
@@ -217,12 +234,16 @@
               </div>
             </a>
 
-            <a href="#" class="article__item">
+            <a
+              href="#"
+              class="article__item wow fadeInUp"
+              data-wow-delay="0.6s"
+            >
               <div class="article__image">
                 <div
                   class="article__image"
                   style="
-                    background-image: url(https://res.cloudinary.com/dqv9mfbvt/image/upload/v1596818035/img-001_ebch3p.webp);
+                    background-image: url(https://res.cloudinary.com/dqv9mfbvt/image/upload/v1595331633/pablita-music-band_glxdto.png);
                   "
                 ></div>
               </div>
@@ -238,7 +259,11 @@
               </div>
             </a>
 
-            <a href="#" class="article__item">
+            <a
+              href="#"
+              class="article__item wow fadeInUp"
+              data-wow-delay="0.7s"
+            >
               <div class="article__image">
                 <div
                   class="article__image"
@@ -264,13 +289,15 @@
 
       <section class="newsletter container">
         <div class="newsletter__intro container--pall">
-          <h2>Join our monthly newsletter</h2>
-          <p>
+          <h2 class="wow fadeInUp" data-wow-delay="0.8s">
+            Join our monthly newsletter
+          </h2>
+          <p class="wow fadeInUp" data-wow-delay="0.9s">
             Far far away, behind the word mountains, far from the countries
             Vokalia and Consonantia, there live the blind texts.
           </p>
 
-          <div class="mb-form">
+          <div class="mb-form wow fadeInUp" data-wow-delay="1s">
             <label for="email">Email</label>
             <input
               class="form-field"
@@ -280,7 +307,7 @@
             />
           </div>
 
-          <div class="container__item">
+          <div class="container__item wow fadeInUp" data-wow-delay="1.2s">
             <form class="form">
               <input
                 type="email"
@@ -343,6 +370,9 @@
         </div>
       </footer>
     </main>
+    <script>
+      new WOW().init();
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
