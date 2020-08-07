@@ -294,8 +294,16 @@ button:hover,
   color: #000;
 }
 
-.btn {
+#ht-b {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  background: #0a0a0a;
+  border: 0.5px solid #0a0a0a;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 3px;
   color: #fff;
+  font-size: 0.875rem;
 }
 
 @media (max-width: 63.9375em) {

@@ -186,8 +186,16 @@ button,
   }
 }
 
-.btn {
+#ht-b {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  background: $darkGreen;
+  border: 0.5px solid $darkGreen;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 3px;
   color: #fff;
+  font-size: $font-sm;
 }
 
 //Visibility

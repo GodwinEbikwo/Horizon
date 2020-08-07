@@ -5,7 +5,7 @@ const header = document.querySelector("#header");
 const heroImg = document.querySelector(".hero__image");
 const h1Line = document.querySelector(".hero__text h1");
 const contentP = document.querySelector(".hero__text p");
-const contentB = document.querySelector(".hero__text .btn");
+const contentB = document.querySelector(".hero__text a");
 
 //features
 const fcT = document.querySelector(".features__content h3");
@@ -98,5 +98,6 @@ const scene = new ScrollMagic.Scene({
   triggerHook: 0,
   reverse: false,
 })
+
   .setTween(featuresTL)
   .addTo(controller);
