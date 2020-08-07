@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+.features {
+  background-color: $offWhite;
+  margin-top: 5vh;
+
+  &__container {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
+
+    @include breakpoint-down(medium) {
+      padding-right: 0rem;
+      padding-left: 0rem;
+    }
+
+    @include breakpoint-up(large) {
+      padding-right: 8.75rem;
+      padding-left: 8.75rem;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    // border: 1px solid red;
+
+    @include breakpoint-down(medium) {
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .features__content {
+      width: 33%;
+      @include breakpoint-down(medium) {
+        width: 80%;
+      }
+      @include breakpoint-up(large) {
+        width: 40%;
+      }
+      h3 {
+        font-family: "Playfair Display", serif;
+        line-height: 3.4rem;
+        font-size: 2.6rem;
+        margin: 0 0 2.5rem;
+        font-weight: 600;
+      }
+      p {
+        line-height: 1.8rem;
+        font-weight: 300;
+        margin-bottom: 88px;
+        @include breakpoint-up(large) {
+          padding-right: 3.75rem;
+        }
+      }
+      .btn-row {
+        a {
+          text-decoration: none;
+          font-weight: 600;
+
+          img {
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+
+    .features__list {
+      @include breakpoint-down(medium) {
+        text-align: center;
+        flex-direction: column;
+        width: 90%;
+      }
+
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      ul {
+        @include breakpoint-down(medium) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+        li {
+          list-style: none;
+          img {
+            margin-bottom: 1.5rem;
+          }
+          h5 {
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin: 0;
+            font-family: "Playfair Display", serif;
+          }
+          p {
+            line-height: 1.8rem;
+            font-weight: 300;
+            width: 16.875rem;
+            margin: 1rem 0 4.5rem;
+          }
+        }
+      }
+    }
+  }
+}

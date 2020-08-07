@@ -1,0 +1,15 @@
+.price {
+  height: 40vh;
+  border-bottom: 1px solid grey;
+  .price {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 4rem;
+      color: grey;
+    }
+  }
+}
