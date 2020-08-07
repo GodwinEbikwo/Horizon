@@ -863,28 +863,28 @@ button:hover,
   padding: 8px 16px;
   line-height: 25px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   font-family: inherit;
   color: #000;
-  border: 0.5px solid grey;
+  border: 0.5px solid #554f4f;
   -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
 
 .form-field::-webkit-input-placeholder {
-  color: #000;
+  color: #8d8d8d;
 }
 
 .form-field:-ms-input-placeholder {
-  color: #000;
+  color: #8d8d8d;
 }
 
 .form-field::-ms-input-placeholder {
-  color: #000;
+  color: #8d8d8d;
 }
 
 .form-field::placeholder {
-  color: #000;
+  color: #8d8d8d;
 }
 
 .form-group {
