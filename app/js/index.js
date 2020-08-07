@@ -5,7 +5,7 @@ const header = document.querySelector("#header");
 const heroImg = document.querySelector(".hero__image");
 const h1Line = document.querySelector(".hero__text h1");
 const contentP = document.querySelector(".hero__text p");
-const contentB = document.querySelector(".hero__text a");
+const contentB = document.querySelector(".hero__text #ht-b");
 
 //features
 const fcT = document.querySelector(".features__content h3");
@@ -55,14 +55,14 @@ featuresTL
     delay: -0.6,
     opacity: 0,
     y: 60,
-    duration: 1,
+    duration: 1.2,
     ease: "power3.out",
     stagger: {
       amount: 0.2,
     },
   })
   .from(fL, {
-    delay: -0.7,
+    delay: -0.8,
     opacity: 0,
     y: 40,
     duration: 1.5,
