@@ -52,7 +52,7 @@ heroTl
 const featuresTL = gsap.timeline();
 featuresTL
   .from([fcT, fcP, fcB], {
-    delay: -0.4,
+    delay: -0.6,
     opacity: 0,
     y: 60,
     duration: 1,
@@ -62,7 +62,7 @@ featuresTL
     },
   })
   .from(fL, {
-    delay: -0.6,
+    delay: -0.8,
     opacity: 0,
     y: 40,
     duration: 1,
@@ -94,9 +94,10 @@ featuresTL
 
 const controller = new ScrollMagic.Controller();
 const scene = new ScrollMagic.Scene({
-  triggerElement: "#ht-b",
+  triggerElement: "#aniID",
   triggerHook: 0,
   reverse: false,
 })
+  .addIndicators()
   .setTween(featuresTL)
   .addTo(controller);
